@@ -1,0 +1,375 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    background-color: rgb(145, 160, 160);
+    width: 100%;
+    height: 100vh;
+}
+
+.logo {
+    width: 15%;
+    cursor: pointer;
+}
+
+.navbar {
+    width: 80%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.navbar ul li {
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+}
+
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 100%;
+    background: rgb(204, 64, 9);
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.4s ease-out;
+} 
+
+.navbar ul li:hover::before{
+    width: 100%;
+}
+
+header{
+    background-image: url(fondo2.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+} 
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+
+}
+
+.Menu{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    z-index: 1000;
+}
+
+.Menu.logo{
+    font-weight: 700;
+    font-size: 25px;
+    color:blueviolet;
+}
+
+.Menu .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+
+.Menu .navbar ul li a:hover{
+    color:brown;
+}
+
+.image{
+
+    height: 25%;
+    width: 25%;
+    padding: 30px 0;
+
+}
+
+#Menu{
+    display: 25px;
+}
+
+.Menu-icono{
+    width: 25px;
+}
+
+.Menu label{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content{
+    display: flex;
+}
+
+.content{
+    padding: 150px 150px opx 0px;
+}
+
+.content h1{
+    color: blueviolet;
+    font-size: 55px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 55px;
+}
+
+.content p{
+    margin-top: 25px;
+    color: brown;
+    text-transform: uppercase;
+    font-size: 40px;
+    line-height: 40px;
+}
+
+.btn-1{
+    display: inline-block;
+    background-color: rgba(170, 177, 255, 0.3);
+    border: 2px solid #aab1ff;
+    margin: 40px 14px 0px;
+    padding: 15px 30px;
+    color:aquamarine;
+    color:black;
+    border-radius: 30px;
+}
+
+.btn-1:hover{
+    background-color: rgb(211, 90, 9);
+}
+
+.service {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.service {
+    padding: 25px;
+    margin: 0px 10px;
+    box-shadow: 0px  0px 20px rgba(138, 2, 2, 0.3);
+}
+
+.service img {
+    margin-top: -50px;
+}
+
+
+.service h2 {
+    font-size: 20px;
+    color:rgb(135, 18, 245);
+    margin-bottom: 10px;
+}
+
+.service p {
+    color:#c50707;
+    font-size: 16px;
+}
+
+.porfolio {
+    padding: 80px 0px;
+    text-align: center;
+    color:rgba(54, 9, 216, 0.877);
+}
+
+.porfolio h3 {
+    font-size: 55px;
+}
+
+.porfolio{
+    display: flex;
+    align-items: center;
+}
+
+.porfolio img{
+    width: 350px;
+}
+
+.porfolio-1{
+    text-align: left;
+    margin-left: 100px;
+}
+
+.porfolio-1 h3{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.porfolio-1 p {
+    font-size: 18px;
+    color:rgb(135, 18, 245);
+    margin-bottom: 25px;
+}
+
+.porfolio-2{
+    text-align: left;
+    margin-right: 100px;
+}
+
+.porfolio-2 h3{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.porfolio-2 h3{
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.porfolio-2 p {
+    font-size: 18px;
+    color:rgb(135, 18, 245);
+    margin-bottom: 25px;
+}
+
+footer{
+    padding: 200px 0px 30px 0px;
+    background-image: url(miau.jpg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}   
+
+.info-content{
+    display: flex;
+}
+
+.info-prince{
+    padding: 35px;
+    text-align: center;
+    background-color: rgb(252, 118, 8);
+    box-shadow: 0px 0px 25px rgb(1, 134, 134);
+    margin: 0px 150px 0px 0px;
+    color:rgb(2, 68, 11);
+} 
+
+.info-prince h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.prince{
+    font-size: 14px;
+    color:blue !important;
+    margin-bottom: 10px;
+}
+
+.info-prince{
+    font-size: 16px;
+    color:#aab1ff;
+}
+
+.info-txt{
+    margin-left: 35px;
+    color:rgb(231, 228, 10);
+}
+
+hr{
+    margin: 45px 0px;
+    border: 0.5px solid #aab1ff;
+}
+
+.enlaces{
+    display: flex;
+    justify-content: space-between;
+    color:#c50707;
+}
+
+.enlaces h5{
+    font-size: 25px;
+}
+
+.enlaces{
+    display: flex;
+}
+
+.enlaces li a{
+    display: block;
+    margin: 20px;
+    color: antiquewhite;
+}
+
+.enlaces li a:hover{
+    color: aqua;
+}
+
+@media (max-width:991px){
+    Menu {
+        padding: 20px;
+    }
+    .Menu label{
+        display: initial;
+    }
+    .Menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgb(134, 23, 224);
+        display: none;
+    }
+    .Menu .navbar ul li{
+        width: 100%;
+    }
+    #Menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    head{
+        height: 0vh;
+        padding: 400px 0px;
+        background-position: center center;
+    }
+
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 0px 30px;
+    }
+
+    .content{
+        padding: 0px;
+    }
+
+    .content h1{
+        margin-top: 100px;
+        font-size: 45%;
+
+    }
+
+    .content p{
+        margin-top: 0px;
+    }
+
+    .header-content img{
+        width: 150px;
+    }
+
+    .service{
+        flex-direction: column;
+        padding: 50px 30px 0px 30px;
+    }
+}
